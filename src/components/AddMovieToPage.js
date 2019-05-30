@@ -13,12 +13,22 @@ const AddMovieToPage = props => {
     return splitMovieArr;
   };
 
+  const underscoreMovies = title => {
+    const newTitle = title.join(" ").replace(/[A-Za-z]/gi, "_");
+    console.log(newTitle);
+    return newTitle;
+  };
+
   const [movie, setMovie] = React.useState(splitMovieArray());
+  const [underscoreMovie, setUnderscoreMovie] = React.useState(
+    underscoreMovies(movie)
+  );
   console.log(movie);
 
   return (
     <div>
       <h1>{movie}</h1>
+      <h1>{underscoreMovie}</h1>
     </div>
   );
 };
