@@ -2,17 +2,9 @@ import React from "react";
 import getMovieData from "../utils/getMovieData";
 
 const UserHeader = props => {
-  const [apiData, setApiData] = React.useState("");
-  React.useEffect(() => {
-    getMovieData().then(data => setApiData(data));
-  }, []);
-  if (!apiData) {
-    return <h3>...Loading</h3>;
-  }
-  console.log(apiData);
   return (
     <div>
-      <h1>Ryan, James & Dylan</h1>
+      <h1 className="subtitle">A Ryan, James & Dylan App</h1>
     </div>
   );
 };
