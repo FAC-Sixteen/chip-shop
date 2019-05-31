@@ -1,3 +1,13 @@
+@font-face {
+  font-family: hangman;
+  src: url(./hangman.otf);
+}
+
+body {
+  font-family: hangman;
+  font-size: 2rem;
+}
+
 .letters-container {
   display: flex;
   justify-items: space-between;
@@ -12,7 +22,11 @@
   margin: 0.5rem;
 }
 
-.title,
+.title {
+  text-align: center;
+}
+
 .subtitle {
   text-align: center;
+  font-size: 1.5rem;
 }
