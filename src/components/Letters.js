@@ -1,6 +1,6 @@
 import React from "react";
 
-const Letters = props => {
+const Letters = ({ handleLetterSelection }) => {
   const alphabet = [
     "a",
     "b",
@@ -30,29 +30,15 @@ const Letters = props => {
     "z"
   ];
 
-  const [letter, setLetter] = React.useState("");
-  const [movie, setMovie] = React.useState("");
-
-  //   React.useEffect(() => {
-  //     document
-  //       .getElementsByClassName("digits")
-  //       .addEventListener("click", handleLetterSelection);
-  //     return () => {
-  //       document
-  //         .getElementsByClassName("digits")
-  //         .removeEventListener("click", handleLetterSelection);
-  //     };
-  //   }, []);
-
-  const handleLetterSelection = letter => {
-    setLetter(letter);
-  };
-  console.log(letter);
   return (
     <div>
       <ul className="letters-container">
-        {alphabet.map(letter => (
-          <li className="digits" onClick={() => handleLetterSelection(letter)}>
+        {alphabet.map((letter, i) => (
+          <li
+            className="digits"
+            onClick={() => handleLetterSelection(letter)}
+            key={i}
+          >
             {letter}
           </li>
         ))}
