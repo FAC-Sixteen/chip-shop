@@ -50,22 +50,23 @@ const HandleHangman = props => {
   const [hangmanArray, setHangmanArray] = React.useState(
     createHangmanArray([], "_")
   );
+  console.log("yoooo", hangmanArray);
 
   const [letterState, setLetterState] = React.useState("");
   const [counter, setCounter] = React.useState(0);
 
   const handleHangmanLetterUpdate = letter => {
     setLetterState(letter);
+    console.log(letter);
     setCounter(counter + 1);
   };
-  console.log("counting this shit", counter);
-
-  console.log("clicked", hangmanArray);
 
   return (
     <div>
+      <h1 className="counter">{counter}</h1>
+      {counter === 8 ? alert(" LOL YOU DEAD! :(  ") : null}
       <HangmanCom
-        hangmanArray={createHangmanArray(hangmanArray, letterState, counter)}
+        hangmanArray={createHangmanArray(hangmanArray, letterState)}
       />
       <Letters handleLetterSelection={handleHangmanLetterUpdate} />
     </div>
