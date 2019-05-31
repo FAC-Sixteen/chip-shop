@@ -1,70 +1,46 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f210f167-80cb-4101-aada-488c03930052/deploy-status)](https://app.netlify.com/sites/neopets/deploys)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/eced4ca2-b3ce-4e21-977f-067ad5ee70f1/deploy-status)](https://app.netlify.com/sites/fervent-yalow-a23261/deploys)
+# Hangman Game
 
-## Available Scripts
+A nostalgic Hangman game, made by [James](https://github.com/jameslevine), [Ryan](https://github.com/rymatech) and [Dylan](https://github.com/dalmano) 
 
-In the project directory, you can run:
+![hangman](https://media.giphy.com/media/Hf5RGoTiNHOJq/giphy.gif)
 
-### `npm start`
+## Project Setup
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run locally, clone this repo and run `npm i` to install packages.
+* `npm start` to run locally
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Goals
 
-### `npm test`
+Use React to build an interactive game that uses data from an API.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Core Project Goals:
+- [x] Query a movie API for movie names
+- [x] Populate the UI with API data
+- [x] Have some form of persistent state and interactivity
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Our Goals:
+- [x] Hangman game!
+- [x] Render a hangman word with underscores
+- [x] Guess a letter and if right amend word
+- [x] Create counter to track guesses
+- [x] Create counter to track guesses
+- [ ] Connect counter to incorrect guesses
+- [x] CSS
+- [x] Responsive
+- [x] Use create-react-app
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Problems
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Connecting counter to only trigger on incorrect guesses
+* Uplifting react state
+* Showing correctly guessed letters (thanks to Sophia)
+* CSS wizardry
 
-### `npm run eject`
+## Cool stuff we learned
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* React and react state
+* Using repl-it for difficult algorithms to more easily write and run individual functions.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
