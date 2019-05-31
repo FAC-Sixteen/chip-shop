@@ -3,7 +3,7 @@ import React from "react";
 const HangmanImg = () => {
   return (
     <div>
-      <img src="../../public/ropeimg.png" alt="rope" />
+      <img src="./ropeimg.png" alt="rope" className="main-rope" />
     </div>
   );
 };
