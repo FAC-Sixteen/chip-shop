@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import UserHeader from "./components/UserHeader";
 import HandleHangman from "./components/HandleHangman";
+import HangmanImg from "./components/HangmanImg";
 
 const App = () => {
   // const [apiData, setApiData] = React.useState("");
@@ -19,6 +20,7 @@ const App = () => {
     <div className="App">
       <h1 className="title">handleHangman</h1>
       <UserHeader />
+      <HangmanImg />
       <HandleHangman />
     </div>
   );
