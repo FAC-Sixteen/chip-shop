@@ -8,25 +8,28 @@ body {
   font-size: 2rem;
 }
 
-.letters-container {
-  display: flex;
-  justify-items: space-between;
-  flex-wrap: wrap;
-}
-
 .digits {
   list-style-type: none;
   display: inline;
   border: solid 3px lightgray;
   padding: 0.8rem;
   margin: 0.5rem;
-}
-
-.title {
-  text-align: center;
+  font-size: 1rem;
 }
 
 .subtitle {
-  text-align: center;
   font-size: 1.5rem;
+}
+
+.App {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main-rope {
+  height: 17rem;
+  width: auto;
+  margin: 3rem;
 }
